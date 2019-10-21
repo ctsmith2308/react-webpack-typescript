@@ -28,7 +28,7 @@
 
 npm install --save-dev webpack webpack-cli react react-dom @types/react @types/react-dom typescript ts-loader source-map-loader
 
-`touch tsconfig.json`
+`tsconfig.json`
 
 ```
 {
@@ -43,7 +43,7 @@ npm install --save-dev webpack webpack-cli react react-dom @types/react @types/r
 }
 ```
 
-`touch webpack.config.js`
+`webpack.config.js`
 
 ```
 module.exports = {
@@ -135,5 +135,9 @@ export class Hello extends React.Component<HelloProps, {}> {
     }
 }
 ```
+
+`npx webpack`
+
+`open index.html`
 
 
