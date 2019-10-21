@@ -1,7 +1,11 @@
 `mkdir react-webpack-typescript`
+
 `cd react-webpack-typescript`
+
 `npm init -y`
+
 `git init`
+
 `touch index.html`
 
 `index.html`
@@ -26,7 +30,7 @@
 </html>
 ```
 
-npm install --save-dev webpack webpack-cli react react-dom @types/react @types/react-dom typescript ts-loader source-map-loader
+`npm install --save-dev webpack webpack-cli react react-dom @types/react @types/react-dom typescript ts-loader source-map-loader`
 
 `tsconfig.json`
 
@@ -88,13 +92,14 @@ module.exports = {
 };
 ```
 
+```
 react-webpack-typescript/
 ├─ dist/
 └─ src/
     └─ index.tsx  
     └─ components/
         └─ Hello.tsx
-
+```
 
 `index.tsx`
 
