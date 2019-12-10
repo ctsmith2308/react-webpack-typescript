@@ -6,18 +6,19 @@ module.exports = {
   devtool: "source-map",
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: [".ts", ".tsx"]
+    extensions: [".ts", ".tsx", ".js"]
   },
 
   module: {
     rules: [
       {
-        test: /\.ts(x?)$/,
+        test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: [
           {
             loader: "ts-loader"
-          }
+          },
+          { loader: "babel-loader", options: { babelrc: true } }
         ]
       },
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
